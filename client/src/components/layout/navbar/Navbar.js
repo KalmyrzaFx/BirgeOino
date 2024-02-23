@@ -12,7 +12,7 @@ import SideDrawer from './SideDrawer';
 import NotificationList from '../../notification/NotificationList';
 import UserMenu from '../UserMenu';
 
-import Logo from '../../../img/logo.png';
+import Logo from '../../../img/BirgeLogo3.png';
 
 class Navbar extends Component {
   constructor(props){

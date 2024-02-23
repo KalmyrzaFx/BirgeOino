@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
+  background-color: #f9f3ea;
 }
 
 .map{
@@ -12,7 +13,7 @@ body {
 
 .logo{
   width: 11rem;
-  margin-bottom: 3px;
+  margin-top: 3px;
 }
 
 .card{
@@ -35,13 +36,13 @@ body {
 }
 
 .primary-color{
-  background-color: #22435A !important;
-  color: white !important;
+  background-color: #001233 !important;
+  color: #f9f3ea !important;
 }
 
 .secondary-color{
-  background-color: #035aa6 !important;
-  color: white !important;
+  background-color: #a2d5cd  !important;
+  color: #001233 !important;
 }
 
 .primary-textColor{ color: #22435A !important; }
