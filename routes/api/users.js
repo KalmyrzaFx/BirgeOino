@@ -11,8 +11,7 @@ const validateLoginInput = require('../../validation/login');
 const User = require('../../models/User');
 const Notification = require('../../models/Notification');
 
-// POST /api/users/register
-// sign up a new user
+
 router.post('/register', (req, res) => {
     const {errors, isValid} = validateRegisterInput(req.body);
     
@@ -35,7 +34,7 @@ router.post('/register', (req, res) => {
                 
                 const newNotification = new Notification({
                     userID: newUser._id,
-                    text: "Welcome to FindSport2Play, please create your profile."
+                    text: "Добро пожаловать, настройте ваш профиль"
                 });
                 
                 bcrypt.genSalt(10, (err, salt) => {

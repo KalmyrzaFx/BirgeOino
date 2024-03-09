@@ -64,14 +64,14 @@ class Login extends Component{
                 <Card className={login__card}>
                   <CardContent>
                     <Typography className="primary-textColor" variant="h5" paragraph>
-                      Log In
+                      Войти
                     </Typography>
                     <Typography variant="body2" color="secondary">
                       {errors.servererror}
                     </Typography>
                     <form onSubmit={this.onSubmit} className="mb-2">
                       <TextFieldGroup
-                        label="Email"
+                        label="Почта"
                         placeholder="Email"
                         name="email"
                         type="email"
@@ -80,8 +80,8 @@ class Login extends Component{
                         error={errors.email}
                       />
                       <TextFieldGroup
-                        label="Password"
-                        placeholder="Password"
+                        label="Паороль"
+                        placeholder="Пароль"
                         name="password"
                         type="password"
                         value={this.state.password}
@@ -93,12 +93,12 @@ class Login extends Component{
                           type="submit"
                           variant="contained"
                           disabled={auth.loading}>
-                          Submit
+                          Войти
                           {auth.loading && <CircularProgress size={24} className={btn__progress} />}
                         </Button>
                     </form>
                     <Typography variant="subtitle2" className={login__info}>
-                      Dont have an account? <Link to="/register">Sign Up</Link>
+                      Нет аккаунта? <Link to="/register">Зарегистрироваться</Link>
                     </Typography>
                   </CardContent>
                 </Card>

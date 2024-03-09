@@ -65,22 +65,22 @@ class Register extends Component{
             <Card className={register__card}>
               <CardContent>
                 <Typography className="primary-textColor" variant="h5" paragraph>
-                  Sign Up
+                  Регистрация
                 </Typography>
                 <Typography variant="body2" color="secondary">
                   {errors.servererror}
                 </Typography>
                 <form noValidate onSubmit={this.onSubmit} className="mb-2">
                   <TextFieldGroup
-                    label="Name"
-                    placeholder="Name"
+                    label="Имя"
+                    placeholder="Имя"
                     name="name"
                     value={this.state.name}
                     onChange={this.onChange}
                     error={errors.name}
                   />
                   <TextFieldGroup
-                    label="Email"
+                    label="Почта"
                     placeholder="Email"
                     name="email"
                     type="email"
@@ -89,8 +89,8 @@ class Register extends Component{
                     error={errors.email}
                   />
                   <TextFieldGroup
-                    label="Password"
-                    placeholder="Password"
+                    label="Пароль"
+                    placeholder="Пароль"
                     name="password"
                     type="password"
                     value={this.state.password}
@@ -98,8 +98,8 @@ class Register extends Component{
                     error={errors.password}
                   />
                   <TextFieldGroup
-                    label="Confirm Password"
-                    placeholder="Confirm Password"
+                    label="Подтвердить пароль"
+                    placeholder="Подтвердить пароль"
                     name="password2"
                     type="password"
                     value={this.state.password2}
@@ -107,19 +107,19 @@ class Register extends Component{
                     error={errors.password2}
                   />
                   <Typography variant="subtitle2">
-                    By creating an account, you accept FindSport2Play <Link to="/termsofservice">Terms of Service</Link> and <Link to="/privacypolicy">Privacy Policy</Link>
+                    Создавая аккаунт, вы соглашаетесь <Link to="/termsofservice">Условиями использования</Link> и <Link to="/privacypolicy">Политикой конфиденциальности</Link> BirgeOyno
                   </Typography>
                   <Button
                     className={auth.loading ? "relative" : "relative primary-color marginT-1"}
                     type="submit"
                     variant="contained"
                     disabled={auth.loading}>
-                    Create Account
+                    Создать аккаунт
                     {auth.loading && <CircularProgress size={24} className={btn__progress} />}
                   </Button>
                 </form>
                 <Typography variant="subtitle2" className={register__info}>
-                  Already have an account? <Link to="/login">Sign In</Link>
+                 Уже есть аккаунт? <Link to="/login">Войти</Link>
                 </Typography>
               </CardContent>
             </Card>

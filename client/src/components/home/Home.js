@@ -24,6 +24,7 @@ class Home extends Component{
         header__img,
         howItWork,
         howItWork__container,
+        howItWork__container2,
         howItWork__text,
         howItWork__imgReverse,
         steps__text,
@@ -79,7 +80,7 @@ class Home extends Component{
             </div>
 
             <div className={howItWork}>
-              <div className={howItWork__container}>
+              <div className={howItWork__container2}>
                 <img src={HowitworkImg1} className={howItWork__imgReverse} alt="HowitworkImg1" />
                 <div className={howItWork__text}>
                   <h2>Ищите события</h2>
@@ -92,7 +93,7 @@ class Home extends Component{
 
               <div className="mb-5"></div>
 
-              <div className={howItWork__container}>
+              <div className={howItWork__container2}>
                 <img src={HowitworkImg2} alt="HowitworkImg2" />
                 <div className={howItWork__text}>
                   <h2>Создать событие</h2>
