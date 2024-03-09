@@ -10,35 +10,35 @@ module.exports = function validateRegisterInput(data){
     data.password2 = !isEmpty(data.password2) ? data.password2: '';
     
     if(!Validator.isLength(data.name, {min: 2, max: 30})){
-        errors.name = 'Name must be between 2 and 30 chararcters';
+        errors.name = 'Имя должно содержать 2 - 30 символов';
     }
     
     if(Validator.isEmpty(data.name)){
-        errors.name = 'Name field is required';
+        errors.name = 'Требуется имя';
     }
     
     if(!Validator.isEmail(data.email)){
-        errors.email = 'Email is invaild';
+        errors.email = 'неправильный Email';
     }
     
     if(Validator.isEmpty(data.email)){
-        errors.email = 'Email field is required';
+        errors.email = 'требуется Email';
     }
     
     if(Validator.isEmpty(data.password)){
-        errors.password = 'Password field is required';
+        errors.password = 'Требуется пароль';
     }
     
     if(!Validator.isLength(data.password, {min: 6, max: 30})){
-        errors.password = 'Password must be between 6 and 30 chararcters';
+        errors.password = 'Пароль дожен содержать 6 - 30 символов';
     }
     
     if(Validator.isEmpty(data.password2)){
-        errors.password2 = 'Confirm password field is required';
+        errors.password2 = 'Подтвердите пароль';
     }
     
     if(!Validator.equals(data.password, data.password2)){
-        errors.password2 = 'Passwords must match';
+        errors.password2 = 'Пароли должны совпадать';
     }
     
     return {

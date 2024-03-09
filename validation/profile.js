@@ -8,15 +8,15 @@ module.exports = function validateProfileInput(data){
     data.favoriteSport = !isEmpty(data.favoriteSport) ? data.favoriteSport: '';
     
     if(!Validator.isLength(data.handle, {min: 2, max: 40})){
-        errors.handle = 'Handle needs to be between 2 and 40 chararcters';
+        errors.handle = 'Имя должно содержать 2 - 40 символов';
     }
     
     if(Validator.isEmpty(data.handle)){
-        errors.handle = 'Profile handle is required';
+        errors.handle = 'Требуется имя';
     }
     
     if(Validator.isEmpty(data.favoriteSport)){
-        errors.favoriteSport = 'Favorite Sport is required';
+        errors.favoriteSport = 'Требуется любимый спорт';
     }
     
     return {

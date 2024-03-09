@@ -9,25 +9,25 @@ module.exports = function validateProfileInput(data){
     data.numberofplayer = !isEmpty(data.numberofplayer) ? data.numberofplayer: '';
     
     if(Validator.isEmpty(data.nameofevent)){
-        errors.nameofevent = 'Name of event is required';
+        errors.nameofevent = 'Требуется название';
     }
     
     if(Validator.isEmpty(data.typeofsport)){
-        errors.typeofsport = 'Type of sport field is required';
+        errors.typeofsport = 'Требуется вид спорта';
     }
     
     if(!Validator.isNumeric(data.numberofplayer)){
-        errors.numberofplayer = 'Must be a number';
+        errors.numberofplayer = 'Должно быть число';
     }
     
     if(Validator.isEmpty(data.numberofplayer)){
-        errors.numberofplayer = 'Number of player field is required';
+        errors.numberofplayer = 'Требуется кол-во игроков';
     }
     else if(data.numberofplayer <= 1){
-        errors.numberofplayer = 'Must be at least 2 players';
+        errors.numberofplayer = 'Должно быть минимум 2 игрока';
     }
     else if(data.numberofplayer > 100){
-        errors.numberofplayer = 'Must be less than 100 players';
+        errors.numberofplayer = 'Должно быть меньше 100 игроков';
     }
     
     if(!isEmpty(data.imageURL)){
