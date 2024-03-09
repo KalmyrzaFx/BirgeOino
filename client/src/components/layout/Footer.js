@@ -2,7 +2,7 @@ import React from 'react';
 import { Link as RouterLink } from 'react-router-dom';
 import { AppBar, Container, Grid, Link, Typography } from '@material-ui/core';
 
-import Logo from '../../img/logo.png';
+import Logo from '../../img/BirgeLogo3.png';
 
 export default() => {
     return(
@@ -14,33 +14,33 @@ export default() => {
                     </Grid>
                     <Grid item xs={12} sm={9} className="footer-links">
                         <Link className="white-link" component={RouterLink} to="/">
-                            Home
+                            Главная
                         </Link>
                         <span>/</span>
                         <Link className="white-link" component={RouterLink} to="/events">
-                            Events List
+                            Список событий
                         </Link>
                         <span>/</span>
                         <Link className="white-link" component={RouterLink} to="/create-event">
-                            Create Event
+                            Создать событие
                         </Link>
                         <span>/</span>
                         <Link className="white-link" component={RouterLink} to="/register">
-                            Get Started
+                            Начать
                         </Link>
                         <span>/</span>
                         <Link className="white-link" component={RouterLink} to="/termsofservice">
-                            Terms
+                            условия использования
                         </Link>
                         <span>/</span>
                         <Link className="white-link" component={RouterLink} to="/privacypolicy">
-                            Privacy
+                         политика конфиденциальности
                         </Link>
                     </Grid>
                     <Grid item xs={12} sm={3}></Grid>
                     <Grid item xs={12} sm={9}>
                         <Typography className="marginL-d7">
-                            Copyright &copy;{new Date().getFullYear()} FindSport2Play
+                            &copy;{new Date().getFullYear()} BirgeOyno
                         </Typography>
                     </Grid>
                 </Grid>

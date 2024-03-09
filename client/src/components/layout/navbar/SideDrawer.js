@@ -8,7 +8,7 @@ import PostAddIcon from '@material-ui/icons/PostAdd';
 import AccountBoxIcon from '@material-ui/icons/AccountBox';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 
-import Logo from '../../../img/logo.png';
+import Logo from '../../../img/BirgeLogo3.png';
 
 const SideDrawer = ({ isAuthenticated, logout }) => {
     const authLinks = (
@@ -17,19 +17,19 @@ const SideDrawer = ({ isAuthenticated, logout }) => {
           <ListItemIcon className="siderdrawer-icon">
             <PostAddIcon />
           </ListItemIcon>
-          <ListItemText primary="Create Event" />
+          <ListItemText primary="Создать событие" />
         </ListItem>
         <ListItem button component={RouterLink} to="/profile">
           <ListItemIcon className="siderdrawer-icon">
             <AccountBoxIcon />
           </ListItemIcon>
-          <ListItemText primary="Your Profile" />
+          <ListItemText primary="Мой профиль" />
         </ListItem>
         <ListItem button onClick={logout}>
           <ListItemIcon className="siderdrawer-icon">
             <ExitToAppIcon />
           </ListItemIcon>
-          <ListItemText primary="Logout" />
+          <ListItemText primary="Выйти" />
         </ListItem>
       </div>
     );
@@ -40,13 +40,13 @@ const SideDrawer = ({ isAuthenticated, logout }) => {
           <ListItemIcon className="siderdrawer-icon">
             <VpnKeyIcon />
           </ListItemIcon>
-          <ListItemText primary="Login" />
+          <ListItemText primary="Войти" />
         </ListItem>
         <ListItem button component={RouterLink} to="/register" color="textPrimary">
           <ListItemIcon className="siderdrawer-icon">
             <CreateIcon />
           </ListItemIcon>
-          <ListItemText primary="Get Started" />
+          <ListItemText primary="Начать" />
         </ListItem>
       </div>
     );
@@ -60,7 +60,7 @@ const SideDrawer = ({ isAuthenticated, logout }) => {
           <ListItemIcon className="siderdrawer-icon">
             <EventIcon />
           </ListItemIcon>
-          <ListItemText primary="Events List" />
+          <ListItemText primary="Список событий" />
         </ListItem>
         {isAuthenticated ? authLinks : guestLinks}
       </List>

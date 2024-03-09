@@ -8,8 +8,8 @@ class UserMenu extends Component{
         
         return (
             <Menu id="simple-menu" anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={onClose} onClick={onClose}>
-                <MenuItem component={Link} to="/profile">My Profile</MenuItem>
-                <MenuItem onClick={this.props.onLogOut}>Logout</MenuItem>
+                <MenuItem component={Link} to="/profile">Профиль</MenuItem>
+                <MenuItem onClick={this.props.onLogOut}>Выйти</MenuItem>
             </Menu>
         );
     }

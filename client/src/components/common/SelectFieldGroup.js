@@ -6,7 +6,6 @@ const SelectFieldGroup = ({
     value,
     label,
     error,
-    info,
     onChange,
     sportList
 }) => {
@@ -23,7 +22,7 @@ const SelectFieldGroup = ({
                 error={error ? true : false}
             >
             <MenuItem value={value}>
-                <em>Choose Sport Type</em>
+                <em>Выберите вид спорта</em>
             </MenuItem>
             {sportList.map(sport => {
                 return <MenuItem key={sport} value={sport}>{sport}</MenuItem>

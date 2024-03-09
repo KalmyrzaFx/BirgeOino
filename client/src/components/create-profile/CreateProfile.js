@@ -52,45 +52,45 @@ class CreateProfile extends Component{
                     <Card className="card">
                         <CardContent>
                             <Typography variant="h3" component="h1" align="center" gutterBottom>
-                                Create Your Profile
+                                Создать профиль
                             </Typography>
                             <form onSubmit={this.onSubmit}>
                                 <TextFieldGroup
-                                    label="Profile Handle *"
-                                    placeholder="Profile Handle"
+                                    label="имя для профиля *"
+                                    placeholder="имя для профиля"
                                     name="handle"
                                     value={this.state.handle}
                                     onChange={this.onChange}
                                     error={errors.handle}
-                                    info="A unique handle for your profile URL."
+                                    info="Уникальное имя для вашего профиля"
                                 />
                                 <TextFieldGroup
-                                    label="Location"
-                                    placeholder="Location"
+                                    label="Место"
+                                    placeholder="Место"
                                     name="location"
                                     value={this.state.location}
                                     onChange={this.onChange}
                                     error={errors.location}
                                 />
                                 <TextFieldGroup
-                                    label="Favorite Sports *"
-                                    placeholder="Favorite Sports"
+                                    label="Любимые виды спорта *"
+                                    placeholder="Любимые виды спорта"
                                     name="favoriteSport"
                                     value={this.state.favoriteSport}
                                     onChange={this.onChange}
                                     error={errors.favoriteSport}
-                                    info="Please use comma separated values (eg. Baseball,Tennis,Football)"
+                                    info="используйте значения, разделенные запятой (например, Шахматы, Теннис, Футбол)."
                                 />
                                 <TextAreaFieldGroup
-                                    label="Bio"
-                                    placeholder="Short Bio"
+                                    label="О себе"
+                                    placeholder="Коротая информация о себе"
                                     name="bio"
                                     value={this.state.bio}
                                     onChange={this.onChange}
                                     error={errors.bio}
                                 />
                                 <Button className="primary-color marginB-2" type="submit" variant="contained" fullWidth>
-                                    Create
+                                    Создать
                                 </Button>
                             </form>
                         </CardContent>

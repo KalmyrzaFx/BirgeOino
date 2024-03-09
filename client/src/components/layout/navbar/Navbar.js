@@ -96,12 +96,12 @@ class Navbar extends Component {
 
             <div className="hiddenDesk">
               <Link className="white-link" component={RouterLink} to="/events">
-                Events List
+                Список событий
               </Link>
               
               { isAuthenticated ? (
                 <Link className="white-link" component={RouterLink} to="/create-event">
-                  Create Event
+                  Создать событие
                 </Link>
               ) : null }
             </div>

@@ -28,8 +28,8 @@ class Event extends Component{
                     <Paper elevation={3}>
                         <EventItem event={event} snackbarMessage={snackbarMessage} auth={isAuthenticated}/>
                     </Paper>
-                    {isAuthenticated ? <CommentForm /> : <h2>You need to login to add comment. <Link to="/login">Click Here</Link></h2>}
-                    {event.comments.length > 0 ? <Comments eventId={event._id} comments={event.comments} /> : <h2 className="mb-5">No Comment Yet</h2>}
+                    {isAuthenticated ? <CommentForm /> : <h2>Вам необходимо войти, чтобы добавить комментарий. <Link to="/login">Нажмите здесь</Link></h2>}
+                    {event.comments.length > 0 ? <Comments eventId={event._id} comments={event.comments} /> : <h2 className="mb-5">Пока нет комментариев</h2>}
                 </div>
             );
         }

@@ -59,12 +59,12 @@ class EventItem extends Component{
                     <Grid item xs={12} md={6}>
                         <Grid container spacing={6}>
                             <Grid item xs={6}>
-                                <span className={styles.labelInfo}>Type of Sport</span>
+                                <span className={styles.labelInfo}>Вид спорта</span>
                                 <Typography variant="h6" paragraph>{event.typeofsport}</Typography>
                             </Grid>
                             
                             <Grid item xs={6}>
-                                <span className={styles.labelInfo}>Number of Player</span>
+                                <span className={styles.labelInfo}>Количество игроков</span>
                                 <Box display="flex">
                                     <GroupIcon className={styles.icon} />
                                     <Typography variant="h6" paragraph>{event.numberofplayer}</Typography>
@@ -72,21 +72,21 @@ class EventItem extends Component{
                             </Grid>
                         </Grid>
 
-                        <span className={styles.labelInfo}>Location</span>
-                        <Typography variant="h6" paragraph>{event.location ? event.location : "To Be Announced"}</Typography>
+                        <span className={styles.labelInfo}>Место</span>
+                        <Typography variant="h6" paragraph>{event.location ? event.location : "Будет объявлено"}</Typography>
                         
-                        <span className={styles.labelInfo}>Start Date</span>
+                        <span className={styles.labelInfo}>Дата начала</span>
                         <Typography variant="h6" paragraph>
-                            {event.start ? <Moment format="MMMM Do, YYYY">{event.start}</Moment> : "To Be Announced"}
+                            {event.start ? <Moment format="MMMM Do, YYYY">{event.start}</Moment> : "Будет объявлено"}
                         </Typography>
                         
-                        <span className={styles.labelInfo}>Description</span>
+                        <span className={styles.labelInfo}>Описание</span>
                         <Typography variant="h6" paragraph>
-                            {event.description ? event.description : "None"}
+                            {event.description ? event.description : "Нет"}
                         </Typography>
                         
                         <Typography paragraph>
-                            Host By <Link to={`/profile/${event.user._id}`}>
+                            Проводит <Link to={`/profile/${event.user._id}`}>
                                 {event.user.name}
                             </Link>
                         </Typography>
@@ -134,9 +134,9 @@ class EventItem extends Component{
                         onClick={this.onJoinClick.bind(this, event._id)}
                         variant="contained"
                         color="primary" >
-                        {auth.isAuthenticated ? "Join This Event" : "Login to Join"}
+                        {auth.isAuthenticated ? "Присоединиться" : "Войти чтобы присоединиться"}
                     </Button>
-                    <p className="marginL-1">{event.numberofplayer - event.listofplayer.length} spots left</p>
+                    <p className="marginL-1">{event.numberofplayer - event.listofplayer.length} мест осталось</p>
                 </Box>
                 <div className="marginT-1">
                     { event.listofplayer.map((player, index) => {

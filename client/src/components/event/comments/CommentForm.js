@@ -49,18 +49,18 @@ class CommentForm extends Component {
     return (
         <Paper className="marginX-5">
             <AppBar className="primary-color pad-1" position="static">
-                <Typography variant="h5">Make a comment...</Typography>
+                <Typography variant="h5">Написать комментарий...</Typography>
             </AppBar>
             <form className={styles.container} onSubmit={this.onSubmit}>
               <TextAreaFieldGroup
-                label="Comment"
-                placeholder="Your comments"
+                label="Комментарий"
+                placeholder="Ваш комментарий"
                 name="text"
                 value={this.state.text}
                 onChange={this.onChange}
                 error={errors.text}
               />
-              <Button className="primary-color" type="submit" variant="contained">Submit</Button>
+              <Button className="primary-color" type="submit" variant="contained">Отправить</Button>
             </form>
         </Paper>
     );

@@ -7,7 +7,7 @@ import SelectFieldGroup from '../common/SelectFieldGroup';
 import Spinner from '../common/Spinner';
 import { getAllEvents, getEvents } from '../../actions/eventActions';
 
-const sportList = ["All Sports", "Badminton", "Tennis", "Volleyball", "Basketball", "Baseball", "Running", "Table tennis", "Football", "Soccer"];
+const sportList = ["Все виды", "Футбол", "Волейбол" ,"Баскетбол", "Бадминтон", "Настольный Теннис", "Бег", "Шахматы", "Теннис", "Воркаут"];
 
 class Events extends Component{
     constructor(props){
@@ -39,7 +39,7 @@ class Events extends Component{
         if(!events.length){
             eventContent = (
                 <Typography className="marginT-5" variant="h3" color="secondary" component="p" align="center">
-                    No Events Yet
+                    Пока нет событий
                 </Typography>
             );
         }
@@ -56,12 +56,12 @@ class Events extends Component{
                 <Grid container className="marginX-1">
                     <Grid item xs={12} sm={6} md={6}>
                         <Typography className="primary-textColor marginT-2" variant="h3" component="h1">
-                            List of Events
+                            Список событий
                         </Typography>
                     </Grid>
                     <Grid item xs={12} sm={6} md={6}>
                     <SelectFieldGroup
-                        label="Search Sport by Type"
+                        label="Вид Спорта*"
                         name="typeofsport"
                         type="name"
                         value={this.state.typeofsport}

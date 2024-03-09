@@ -35,11 +35,11 @@ class Profile extends Component{
               {user.name}
             </Typography>
             <Typography variant="p" component="p" gutterBottom>
-              You have not yet setup a profile, please add info
+             Вы не настроили профиль, пожалуйста добавьте информацию о себе
             </Typography>
             <p></p>
             <Button className="primary-color marginB-2" component={Link} variant="contained" to="/create-profile">
-              Create Profile
+              Создать профиль
             </Button>
           </div>
         );

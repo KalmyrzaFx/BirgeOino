@@ -22,7 +22,7 @@ export const registerUser = (userData, history) => dispatch => {
     .catch(err => {
       let errorData;
       if(err.response) errorData = err.response.data;
-      else errorData = { servererror: "Something went wrong on the server, Try again later!" };
+      else errorData = { servererror: "Что то случилось с сервером, Поробуйте позже!" };
 
       dispatch({
         type: GET_ERRORS,
@@ -48,7 +48,7 @@ export const loginUser = (userData) => dispatch => {
     .catch(err => {
       let errorData;
       if(err.response) errorData = err.response.data;
-      else errorData = { servererror: "Something went wrong on the server, Try again later!" }
+      else errorData = { servererror: "Что то случилось с сервером, Поробуйте позже!" }
 
       dispatch({
         type: GET_ERRORS,

@@ -16,7 +16,7 @@ class EventsItem extends Component{
                 <Card>
                     <Link to={`/event/${event._id}`}>
                         <img style={{width: '100%', height: '220px'}} src={event.imageURL ? event.imageURL : sportImage}
-                          alt="Sport" />
+                          alt="Спорт" />
                     </Link>
                     <CardHeader className="padB-0" title={event.nameofevent} />
                     <CardContent>
@@ -29,7 +29,7 @@ class EventsItem extends Component{
                     </CardContent>
                     <CardActions>
                         <Button className="primary-color white-link" size="large" variant="contained" fullWidth  component={Link} to={`/event/${event._id}`}>
-                            More Info
+                            Больше
                         </Button>
                     </CardActions>
                 </Card>
