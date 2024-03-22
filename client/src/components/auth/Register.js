@@ -106,9 +106,6 @@ class Register extends Component{
                     onChange={this.onChange}
                     error={errors.password2}
                   />
-                  <Typography variant="subtitle2">
-                    Создавая аккаунт, вы соглашаетесь <Link to="/termsofservice">Условиями использования</Link> и <Link to="/privacypolicy">Политикой конфиденциальности</Link> BirgeOyno
-                  </Typography>
                   <Button
                     className={auth.loading ? "relative" : "relative primary-color marginT-1"}
                     type="submit"
