@@ -5,7 +5,7 @@ import { Grid, Card, CardHeader, CardContent, CardActions, Chip, Button, Typogra
 import GroupIcon from '@material-ui/icons/Group';
 import SportsBasketballIcon from '@material-ui/icons/SportsBasketball';
 
-import sportImage from '../../img/noImage.svg';
+import sportImage from '../../img/BirgeLogo3.png';
 
 class EventsItem extends Component{
     render(){
