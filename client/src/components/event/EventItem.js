@@ -13,7 +13,7 @@ import ReportIcon from '@material-ui/icons/Report';
 import MapView from './map/MapView';
 import DeleteDialog from '../common/DeleteDialog';
 import styles from './Event.module.css';
-import sportImage from '../../img/noImage.svg';
+import sportImage from '../../img/BirgeLogo3.png';
 import { deleteEvent, joinEvent, flagEvent } from '../../actions/eventActions';
 
 class EventItem extends Component{
