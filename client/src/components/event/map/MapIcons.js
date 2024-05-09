@@ -1,6 +1,6 @@
 import L from 'leaflet';
 
-import Icon from '../../../img/BirgeLogo3.png';
+import Icon from '../../../img/icon1.svg';
 
 export const markerIcon = L.icon({
     iconUrl: Icon,
