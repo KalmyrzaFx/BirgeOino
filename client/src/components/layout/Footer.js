@@ -29,6 +29,13 @@ export default() => {
                             Начать
                         </Link>
                         <span>/</span>
+                        <Link className="white-link" component={RouterLink} to="/termsofservice">
+                            Условия
+                        </Link>
+                        <span>/</span>
+                        <Link className="white-link" component={RouterLink} to="/privacypolicy">
+                            Конфиденциальность
+                        </Link>
                     </Grid>
                     <Grid item xs={12} sm={3}></Grid>
                     <Grid item xs={12} sm={9}>

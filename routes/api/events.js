@@ -98,20 +98,20 @@ router.put('/:id/join', passport.authenticate('jwt', {session: false}), (req, re
         .populate('user', ['name'])
         .then(event => {
             if(!event){
-                return res.status(404).json({error: 'This event is not found'});
+                return res.status(404).json({error: 'Мероприятие не найдено'});
             }
             
             let count = 0;
             
             for(let i of event.listofplayer){
                 if(i["id"] === req.user.id){
-                    return res.status(400).json({error: 'You already join this event'});
+                    return res.status(400).json({error: 'Вы уже зарегистрировались'});
                 }
                 count++;
             }
             
             if(count >= event.numberofplayer){
-                return res.status(400).json({error: 'This event is full'});
+                return res.status(400).json({error: 'Места заполнены'});
             }
             
             const userName = req.user.name;
@@ -136,7 +136,7 @@ router.put('/:id/join', passport.authenticate('jwt', {session: false}), (req, re
             res.status(200).json({
                 msg: 'Success on joining that event',
                 event: result,
-                join: "You are going to this event"
+                join: "Вы записались"
             });
         })
         .catch(err => res.status(500).json({error: "Error in put api/events/:id/join. " + err}));
