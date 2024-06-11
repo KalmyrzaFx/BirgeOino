@@ -4,5 +4,6 @@ BirgeOyno is a web application designed to connect people through their shared i
 in non-competitive sports activities
 
 ## Kalmyrza Zholchubekov
-Stack - MERN  
+Stack - MERN
+Deploy Link - https://birgeoino.onrender.com
 
